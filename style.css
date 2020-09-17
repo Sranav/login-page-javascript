@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: "Oswald", sans-serif;
 }
+
 .container {
   background-color: white;
   border-radius: 5px;
@@ -21,26 +22,32 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
+
 .header {
   background-color: rgb(213, 215, 218);
   padding: 20px 40px;
   border-bottom: tomato;
 }
+
 .header h2 {
   margin: 0;
 }
+
 .form {
   padding: 20px 40px;
 }
+
 .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
+
 .form-control label {
   display: inline-block;
   margin-bottom: 5px;
 }
+
 .form-control input {
   border: 2px solid darkgrey;
   border-radius: 5px;
@@ -50,18 +57,58 @@ body {
   padding: 10px;
   font-family: monospace;
 }
+
+.form-control.success input {
+  border-color: darkgreen;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
 .form-control input::placeholder {
   color: darksalmon;
   padding: 2px;
   font-weight: bold;
 }
+
 .form-control i {
   position: absolute;
   top: 44px;
   right: 10px;
+  visibility: hidden;
 }
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: darkgreen;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
 .form-control small {
   position: absolute;
   bottom: 0;
   left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+.form button {
+  width: 100%;
+  background-color: aquamarine;
+  border: 2px solid darkcyan;
+  color: black;
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 4px;
 }
