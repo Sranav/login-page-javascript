@@ -16,14 +16,14 @@
         <h2>Create Account</h2>
       </div>
       <form class="form" id="form">
-        <div class="form-control success">
+        <div class="form-control">
           <label>UserName</label>
           <input type="text" placeholder="username" id="username" />
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error Message</small>
         </div>
-        <div class="form-control error">
+        <div class="form-control">
           <label>Email</label>
           <input type="email" placeholder="email@com" id="email" />
           <i class="fa fa-check-circle"></i>
@@ -32,14 +32,24 @@
         </div>
         <div class="form-control">
           <label>Password</label>
-          <input type="password" placeholder="password" id="password" />
+          <input
+            type="password"
+            placeholder="password"
+            id="password"
+            autocomplete="on"
+          />
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error Message</small>
         </div>
         <div class="form-control">
           <label>Confirm-password</label>
-          <input type="password" placeholder="enter again" id="password2" />
+          <input
+            type="password"
+            placeholder="enter again"
+            id="password2"
+            autocomplete="on"
+          />
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error Message</small>
@@ -49,5 +59,6 @@
     </div>
 
     <script src="https://use.fontawesome.com/52891510d0.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
